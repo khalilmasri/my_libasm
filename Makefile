@@ -17,7 +17,7 @@ OBJS=$(patsubst $(SRC)/%.S, $(OBJ)/%.o, $(SRCS))
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CC) -o $@ $^ $(CFLAGS) src/main.c
+	$(CC) -o $@ $^ $(CFLAGS) src/main.c src/test.c
 
 $(OBJ)/%.o: $(SRC)/%.S
 	${NASM} ${ASMFLAGS} -o $@ $^
