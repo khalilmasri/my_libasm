@@ -13,9 +13,28 @@ int _my_strncmp(char*,char*,int);
 int _my_strcmp(char*,char*);
 int _my_strcasecmp(char*,char*);
 char *_my_strchr(char*,char);
+char *_my_index(char*,char);
+char *_my_memcpy(char*,char*,int);
+char *_my_memset(char*,int,int);
+char *_my_memmove(char*,char*,int);
+int _my_read(int,char*,int);
+int _my_write(int,char*,int);
 
 #endif
 
-#define BUFFER 1000
+#ifndef TEST_H
+#define TEST_H
 
+void print_strlen(char* str);
+void print_strncmp(char *str);
+void print_strcmp(char *str);
+void print_strcasecmp(char *str);
+void print_strchr(char *str);
+void print_index(char *str);
+void print_memcpy();
+void print_memset();
+void print_memmove();
+void print_read_write();
+
+#endif
 
