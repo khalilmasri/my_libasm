@@ -20,38 +20,8 @@
 
 int main(){
 
-    char str[] = "Chris is DALLAT";
-
-    printf("\nString functions\n");
-    // strlen check
-    print_strlen(str);
-
-    // strncmp check 
-    print_strncmp(str);
-
-    // strcpy check
-    print_strcmp(str);
-
-    // strcasecmp check
-    print_strcasecmp(str);
-
-    // strchr check
-    print_strchr(str);
-
-    // index check
-    print_index(str);
-
-    // memcpy check
-    print_memcpy();
-
-    // memset check
-    print_memset();
-
-    // memmove check
-    print_memmove();
-        
-    // read and write check
-    print_read_write();
+    // test cases
+    print_test();
 
     return 0;
 }
