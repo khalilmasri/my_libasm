@@ -14,9 +14,9 @@ int _my_strcmp(char*,char*);
 int _my_strcasecmp(char*,char*);
 char *_my_strchr(char*,char);
 char *_my_index(char*,char);
-char *_my_memcpy(char*,char*,int);
-char *_my_memset(char*,int,int);
-char *_my_memmove(char*,char*,int);
+void *_my_memcpy(char*,char*,int);
+void *_my_memset(char*,int,int);
+void *_my_memmove(char*,char*,int);
 int _my_read(int,char*,int);
 int _my_write(int,char*,int);
 
@@ -35,6 +35,7 @@ void print_memcpy();
 void print_memset();
 void print_memmove();
 void print_read_write();
+void print_test();
 
 #endif
 
