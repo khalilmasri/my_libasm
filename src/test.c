@@ -42,7 +42,7 @@ void print_memcpy(){
          replace[] = "I'm good";
 
     printf("\nMemcpy: \n%s\n", test_a);
-    printf("C memcpy: %s Libasm memcpy : %s\n", (char*)memcpy(test_c,replace, strlen(replace)+1), _my_memcpy(test_a, replace, strlen(replace)+1));
+    printf("C memcpy: %s Libasm memcpy : %s\n", (char*)memcpy(test_c,replace, strlen(replace)+1), (char*)_my_memcpy(test_a, replace, strlen(replace)+1));
 }
 
 void print_memset(){
@@ -85,4 +85,42 @@ void print_read_write(){
 
     close(fd);
     close(libasm_fd);
+}
+
+
+void print_test(){
+
+    char str[] = "Chris is DALLAT";
+
+    printf("\nString functions\n");
+    // strlen check
+    print_strlen(str);
+
+    // strncmp check 
+    print_strncmp(str);
+
+    // strcpy check
+    print_strcmp(str);
+
+    // strcasecmp check
+    print_strcasecmp(str);
+
+    // strchr check
+    print_strchr(str);
+
+    // index check
+    print_index(str);
+
+    // memcpy check
+    print_memcpy();
+
+    // memset check
+    print_memset();
+
+    // memmove check
+    print_memmove();
+        
+    // read and write check
+    print_read_write();
+
 }
