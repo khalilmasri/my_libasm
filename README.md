@@ -9,19 +9,19 @@ An assembly language is a low-level programming language designed for a specific
 ## Functions made in assembly
 
 ```c
-- strlen      -> my_strlen
-- strchr      -> my_strchr
-- memset      -> my_memset
-- memcpy      -> my_memcpy
-- strcmp      -> my_strcmp
-- memmove     -> my_memmove
+- strlen      -> _my_strlen
+- strchr      -> _my_strchr
+- memset      -> _my_memset
+- memcpy      -> _my_memcpy
+- strcmp      -> _my_strcmp
+- memmove     -> _my_memmove
 
-- strncmp     -> my_strncmp
-- strcasecmp  -> my_strcasecmp
-- index       -> my_index
+- strncmp     -> _my_strncmp
+- strcasecmp  -> _my_strcasecmp
+- index       -> _my_index
 
-- read        -> my_read
-- write       -> my_write
+- read        -> _my_read
+- write       -> _my_write
 ```
 ## How to run?
 
